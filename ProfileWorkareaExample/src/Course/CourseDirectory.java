@@ -4,15 +4,48 @@
  */
 package Course;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author MIS
  */
 public class CourseDirectory {
-    private String pName;
-    private String topic;
-    private String region;
-    private String language;
-    private Arraylist<String> studentList;
+    private ArrayList<Course> courseList;
+    public CourseDirectory(){
+        this.courseList = new ArrayList<Course>();
+        
+    }
+    public ArrayList<Course> getCourseList() {
+        return courseList;
+    }
+    public void setCourseList(ArrayList<Course> courseList) {
+        this.courseList = courseList;
+    }
+        public Course addCourse(){
+        Course course = new Course();
+        courseList.add(course);
+        return course;
+    }
     
+    public void deleteCourse(Course course){
+       courseList.remove(course);
+   }
+    public Course searchCourse(String search){
+        for(Course course : courseList){
+        if(course.getpName().equalsIgnoreCase(search)){
+            return course;
+        }
+        else if(course.getTopic().equalsIgnoreCase(search)){
+            return course;
+        }
+        else if(course.getRegion().equalsIgnoreCase(search)){
+            return course;
+        }
+        else if(course.getLanguage().equalsIgnoreCase(search)){
+            return course;
+        }
+        }
+        return null; // Return null if no match is found
+   }
 }

@@ -8,7 +8,7 @@
 *.ctxt
 
 # Mobile Tools for Java (J2ME)
-.mtj.tmp/
+ProfileWorkareaExample/.mtj.tmp/
 
 # Package Files #
 *.jar
@@ -23,28 +23,28 @@
 hs_err_pid*
 
 # IntelliJ IDEA
-.idea/
+ProfileWorkareaExample/.idea/
 *.iml
 *.iws
 
 # Eclipse
 *.metadata
 *.recommenders
-bin/
-tmp/
+ProfileWorkareaExample/bin/
+ProfileWorkareaExample/tmp/
 *.tmp
 *.bak
 *.swp
 *~.nib
-local.properties
-.settings/
-.loadpath
+ProfileWorkareaExample/local.properties
+ProfileWorkareaExample/.settings/
+ProfileWorkareaExample/.loadpath
 
 # NetBeans
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
+ProfileWorkareaExample/nbproject/private/
+ProfileWorkareaExample/build/
+ProfileWorkareaExample/nbbuild/
+ProfileWorkareaExample/dist/
+ProfileWorkareaExample/nbdist/
+ProfileWorkareaExample/.nb-gradle/
 

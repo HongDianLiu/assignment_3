@@ -13,19 +13,23 @@ import Business.Person.Person;
  */
 public abstract class Profile {
     Person person;
-     public Profile(Person p){
+    public Profile(Person p){
         person = p;
         
     }
     
-     public abstract String getRole();
+    public abstract String getRole();
+    
+    public abstract void browseCourses();
+    public abstract void viewProfessorRatings();
+    public abstract void applyForGraduation();
     
     public Person getPerson(){
         return person;
     }
      
 
-        public boolean isMatch(String id) {
+    public boolean isMatch(String id) {
         if (person.getPersonId().equals(id)) {
             return true;
         }

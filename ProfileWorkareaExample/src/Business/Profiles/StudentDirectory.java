@@ -41,5 +41,24 @@ public class StudentDirectory {
         }
             return null; //not found after going through the whole list
          }
-    
+    public void browseCourses(String studentId) {
+        StudentProfile student = findStudent(studentId);
+        if (student != null) {
+            student.browseCourses();
+        }
+    }
+
+    public void viewProfessorRatings(String studentId) {
+        StudentProfile student = findStudent(studentId);
+        if (student != null) {
+            student.viewProfessorRatings();
+        }
+    }
+
+    public void applyForGraduation(String studentId) {
+        StudentProfile student = findStudent(studentId);
+        if (student != null) {
+            student.applyForGraduation();
+        }
+    }
 }

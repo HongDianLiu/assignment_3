@@ -16,6 +16,14 @@ public class Course {
     private String region;
     private String language;
     private ArrayList<String> studentList;
+    private double professorRating;
+// 或者使用方法
+    public double getProfessorRating() {
+        return professorRating;
+    }
+    public void setProfessorRating(double professorRating) {
+        this.professorRating = professorRating;
+    }
 
     public String getpName() {
         return pName;

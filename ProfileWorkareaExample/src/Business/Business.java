@@ -7,8 +7,11 @@ package Business;
 
 import Business.Person.PersonDirectory;
 import Business.Profiles.EmployeeDirectory;
+import Business.Profiles.ProfessorDirectory;
 
 import Business.UserAccounts.UserAccountDirectory;
+import Course.CourseDirectory;
+
 
 /**
  *
@@ -21,6 +24,8 @@ public class Business {
 
     EmployeeDirectory employeedirectory;
     UserAccountDirectory useraccountdirectory;
+    ProfessorDirectory professorDirectory;
+    CourseDirectory courseDirectory;
 
 
     public Business(String n) {
@@ -29,7 +34,8 @@ public class Business {
         persondirectory = new PersonDirectory();
         employeedirectory = new EmployeeDirectory(this);
         useraccountdirectory = new UserAccountDirectory();
-
+        professorDirectory = new ProfessorDirectory();
+        courseDirectory = new CourseDirectory();
 
     }
 

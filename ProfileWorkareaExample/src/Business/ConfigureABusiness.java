@@ -43,7 +43,7 @@ class ConfigureABusiness {
 
 // Create Admins to manage the business
         EmployeeDirectory employeedirectory = business.getEmployeeDirectory();
-        EmployeeProfile employeeprofile0 = employeedirectory.newEmployeeProfile(xeroxadminperson001);
+        EmployeeProfile employeeprofile0 = employeedirectory.addEmployeeProfile(xeroxadminperson001);
 
 
    

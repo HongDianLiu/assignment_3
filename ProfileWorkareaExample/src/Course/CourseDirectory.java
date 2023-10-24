@@ -4,6 +4,7 @@
  */
 package Course;
 
+import Business.Profiles.ProfessorProfile;
 import java.util.ArrayList;
 
 /**
@@ -12,18 +13,23 @@ import java.util.ArrayList;
  */
 public class CourseDirectory {
     private ArrayList<Course> courseList;
+    
     public CourseDirectory(){
         this.courseList = new ArrayList<Course>();
         
     }
+    
     public ArrayList<Course> getCourseList() {
         return courseList;
     }
+    
+    // 應該不需要
     public void setCourseList(ArrayList<Course> courseList) {
         this.courseList = courseList;
     }
-        public Course addCourse(){
-        Course course = new Course();
+    
+    public Course addCourse(String courseName, ProfessorProfile professor, String topic){
+        Course course = new Course(courseName,professor, topic);
         courseList.add(course);
         return course;
     }

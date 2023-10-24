@@ -33,29 +33,31 @@ public class UserAccount {
         return username;
     }
 
-        public boolean isMatch(String id){
-        if(getPersonId().equals(id)) return true;
-        return false;
+    public boolean isMatch(String id){
+    if(getPersonId().equals(id)) return true;
+    return false;
     }
-        public boolean IsValidUser(String un, String pw){
-        
-            if (username.equalsIgnoreCase(un) && password.equals(pw)) return true;
-            else return false;
-        
-        }
-        public String getRole(){
-            return profile.getRole();
-        }
-        
-        public Profile getAssociatedPersonProfile(){
-            return profile;
-        }
-        
-    @Override
-        public String toString(){
-            
-            return getUserLoginName();
-        }
+    
+    public boolean IsValidUser(String un, String pw){
+
+        if (username.equalsIgnoreCase(un) && password.equals(pw)) return true;
+        else return false;
+
+    }
+    
+    public String getRole(){
+        return profile.getRole();
+    }
+
+    public Profile getAssociatedPersonProfile(){
+        return profile;
+    }
+
+@Override
+    public String toString(){
+
+        return getUserLoginName();
+    }
         
 }
 

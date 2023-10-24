@@ -13,7 +13,8 @@ import Business.Person.Person;
  */
 public class StudentProfile extends Profile {
 
-    Person person;
+    // 如果你的person資料沒有正確傳遞的話有可能是因為這裡宣告了 person
+    Person person; 
 //    Transcript transcript;
     //   EmploymentHistroy employmenthistory;
 
@@ -29,8 +30,9 @@ public class StudentProfile extends Profile {
         return "Student";
     }
 
-    public boolean isMatch(String id) {
-        return person.getPersonId().equals(id);
-    }
+// 已經繼承了，不需要寫上
+//    public boolean isMatch(String id) {
+//        return person.getPersonId().equals(id);
+//    }
 
 }

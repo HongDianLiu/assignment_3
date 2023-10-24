@@ -50,6 +50,7 @@ public class UserAccountDirectory {
         }
             return null; //not found after going through the whole list
          }   
+     
      public ArrayList<UserAccount> getUserAccountList()
      {
          return useraccountlist;

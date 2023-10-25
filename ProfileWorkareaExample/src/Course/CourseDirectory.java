@@ -28,8 +28,8 @@ public class CourseDirectory {
         this.courseList = courseList;
     }
     
-    public Course addCourse(String courseName, ProfessorProfile professor, String topic){
-        Course course = new Course(courseName,professor, topic);
+    public Course addCourse(String courseName, ProfessorProfile professor, String topic, String region, String language){
+        Course course = new Course(courseName,professor, topic, region, language);
         courseList.add(course);
         return course;
     }

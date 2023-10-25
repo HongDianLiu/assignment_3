@@ -24,10 +24,12 @@ public class Course {
     
     
     // 不確定一開始建立時要多少，先這樣
-    public Course(String courseName, ProfessorProfile professor, String topic) {
+    public Course(String courseName, ProfessorProfile professor, String topic, String region, String language) {
         this.name = courseName;
         this.professor = professor;
         this.topic = topic;
+        this.region = region;
+        this.language = language;
         this.evaluations = new ArrayList<>();
     }
     

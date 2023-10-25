@@ -26,7 +26,7 @@ public class EmployeeDirectory {
 
     }
 
-    public EmployeeProfile newEmployeeProfile(Person p) {
+    public EmployeeProfile addEmployeeProfile(Person p) {
 
         EmployeeProfile sp = new EmployeeProfile(p);
         employeelist.add(sp);

@@ -4,6 +4,7 @@
  */
 package Course;
 
+import Business.Profiles.ProfessorProfile;
 import java.util.ArrayList;
 
 /**
@@ -11,19 +12,55 @@ import java.util.ArrayList;
  * @author MIS
  */
 public class Course {
-    private String pName;
+    private String name;
+    private ProfessorProfile professor;
     private String topic;
     private String region;
     private String language;
     private ArrayList<String> studentList;
+    private String semester;
+    
+    private ArrayList<CourseEvaluation> evaluations;
+    
+    
+    // 不確定一開始建立時要多少，先這樣
+    public Course(String courseName, ProfessorProfile professor, String topic) {
+        this.name = courseName;
+        this.professor = professor;
+        this.topic = topic;
+        this.evaluations = new ArrayList<>();
+    }
+    
+    // 評價儲存
+    public void addEvaluation(String comment, int rating) {
+        CourseEvaluation evaluation = new CourseEvaluation(comment, rating);
+        evaluations.add(evaluation);
+    }
 
+    public ArrayList<CourseEvaluation> getEvaluations() {
+        return evaluations;
+    }    
+    
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public ProfessorProfile getProfessor() {
+        return professor;
+    }
+           
     public String getpName() {
-        return pName;
+        return professor.getName();
     }
-
-    public void setpName(String pName) {
-        this.pName = pName;
-    }
+    
+//    應該不需要setter
+//    public void setpName(String pName) {
+//        this.pName = pName;
+//    }
 
     public String getTopic() {
         return topic;
@@ -56,5 +93,15 @@ public class Course {
     public void setStudentList(ArrayList<String> studentList) {
         this.studentList = studentList;
     }
+
+    public String getSemester() {
+        return semester;
+    }
+
+    public void setSemester(String semester) {
+        this.semester = semester;
+    }
+    
+    
     
 }

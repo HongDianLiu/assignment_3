@@ -18,7 +18,7 @@ import javax.swing.JPanel;
  *
  * @author kal
  */
-public class FacultyWorkAreaJPanel extends javax.swing.JPanel {
+public class ProfessorWorkAreaJPanel extends javax.swing.JPanel {
 
     javax.swing.JPanel CardSequencePanel;
     Business business;
@@ -27,7 +27,7 @@ public class FacultyWorkAreaJPanel extends javax.swing.JPanel {
      * Creates new form UnitRiskWorkArea
      */
 
-    public FacultyWorkAreaJPanel(Business b, JPanel clp) {
+    public ProfessorWorkAreaJPanel(Business b, JPanel clp) {
 
         business = b;
         this.CardSequencePanel = clp;
@@ -109,7 +109,7 @@ public class FacultyWorkAreaJPanel extends javax.swing.JPanel {
         });
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel1.setText("My Faculty Profie");
+        jLabel1.setText("My Professor Profie");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
